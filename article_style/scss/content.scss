@@ -1,0 +1,121 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    padding: 0px 18px 20px 18px;
+
+    &__empty{
+        float: left;
+        height: 545px / 925px * 100%;
+        bottom: 0;
+        left: 0;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: bottom;
+        }
+    }
+
+    &__body{
+        width: 100%;        
+        font-family: $font-family-Lora;
+        font-size: 17px;
+        margin: 0px 0px 30px 0px;
+
+        &--title{
+            font-size: 34px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        &--subtitle{
+            font-size: 22px;
+            text-align: center;
+            font-weight: 800;
+            text-shadow: 0px 4px 3px rgba(51, 51, 51, 0.349);
+            margin: 0px 0px 30px 0px;
+            @supports (-webkit-text-stroke: .5px #682323) {
+                -webkit-text-stroke: .5px #792727;
+                -webkit-text-fill-color: #000;
+             }
+        }
+        p{
+            margin-block-end: 0;
+            font-size: 16px;
+            &.title{
+                font-weight: 600;
+                font-size: 20px;
+                margin: 0px 0px 7px 0px;
+            }
+        }
+
+        &--inner{
+            p{
+                line-height: 130%;
+            }
+
+            span.bold{
+                font-weight: 800;
+            }
+
+            &--img{
+                float: right;
+            }
+
+        }
+    }
+
+    &__info{
+        text-align: center;
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+          
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+          
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #73727296;
+        }
+    }
+
+    &__tab{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        height: 45px;
+        padding: 5px;
+        border-bottom: 2px solid #4da9db48;
+        margin: 0px 0px 45px 0px;
+
+        &--view{
+            border-right: 1px solid #4da9db48;
+        }
+
+        &--btn{
+            padding: 0px 20px;
+        }
+
+    }
+
+}

@@ -1,0 +1,104 @@
+//Миксины//
+
+@import "mixin.scss";
+
+//Шрифты по умолчанию//
+
+@import "fonts.scss";
+
+$font-size: 16;
+
+$font-family-Inder: Inder;
+$font-family-Lora: Lora;
+$font-family-RobotoMono: RobotoMono;
+$font-family-RobotoMonoItalic: RobotoMonoItalic;
+
+
+
+//Переменные//
+$maxWidthContainer: 1200;
+$md1: 1365.98; 
+$md2: 991.98; 
+$md3: 767.98; 
+$md4: 479.98; 
+$mp1: 679.98;
+
+$maincolor: #000000;
+
+
+//Обнуление//
+
+
+*{box-sizing: border-box;}
+html,body{font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;}
+input,button,textarea{font-family: inherit;}
+input{padding: 0; margin: 0; border: 0; }
+input::-ms-clear{display: none;}
+input:focus{outline: none;}
+button {padding: 0;border: none;font: inherit;color: inherit;background-color: transparent;cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+p{margin-block-start: 0; margin-block-end: 1em;}
+a{color: #000;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul{padding-inline-start: 0!important;margin: 0;}
+ul li {list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: inherit;margin: 0;}
+
+// Стили//
+
+html{
+    height: 100%;
+}
+
+body{
+    color: $maincolor;
+    font-family: $font-family-RobotoMono;
+    height: 100vh;
+    background-color: #E5E5E5;
+    background-image: url(../../imgs/background/background.png);
+    background-blend-mode: luminosity;
+    font-weight: 300;
+    margin: 0;
+    overflow: hidden;
+    
+    &.lock{
+        overflow: hidden;
+    }
+}  
+
+
+.wrapper{
+    height: 100vh;
+    overflow: hidden;
+    padding: 15px 15px 10px 15px;
+    display: flex;
+    flex-direction: column;
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__body{
+        display: flex;
+        gap: 5px;
+        height: 925px / 1080px * 100%;
+    }
+}
+
+.container{
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+}
+
+// Подключение остальных стилей //
+
+@import "header.scss";
+@import "content.scss";
+@import "help.scss";
+
+
+
