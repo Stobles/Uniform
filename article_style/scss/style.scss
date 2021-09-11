@@ -61,7 +61,7 @@ body{
     background-blend-mode: luminosity;
     font-weight: 300;
     margin: 0;
-    overflow: hidden;
+    overflow-y: hidden;
     
     &.lock{
         overflow: hidden;
@@ -70,11 +70,14 @@ body{
 
 
 .wrapper{
-    height: 100vh;
     overflow: hidden;
-    padding: 15px 15px 10px 15px;
     display: flex;
     flex-direction: column;
+
+    @media(min-width: $md2+px){
+        padding: 15px 15px 10px 15px;
+        height: 100vh;
+    }
 
     &__inner{
         display: flex;
@@ -85,7 +88,9 @@ body{
     &__body{
         display: flex;
         gap: 5px;
-        height: 925px / 1080px * 100%;
+        @media(min-width: $md2+px){
+            height: 925px / 1080px * 100%;
+        } 
     }
 }
 
@@ -98,6 +103,7 @@ body{
 
 @import "header.scss";
 @import "content.scss";
+@import "modal.scss";
 @import "help.scss";
 
 

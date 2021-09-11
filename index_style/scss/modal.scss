@@ -1,0 +1,115 @@
+.modal{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 36%, 0.548);
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+    cursor: pointer;
+
+    &.active{
+        visibility: visible;
+        opacity: 1;
+
+        .modal__inner{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    &__inner{
+        position: relative;
+        width: 572px;
+        min-height: 160px;
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 74%, rgba(255,255,255,0.45) 100%);;
+        border-radius: 10px;
+        border: 1px solid hsl(0, 0%, 77%);
+        padding: 10px;
+        transform: scale(0);
+        opacity: .3;
+        transition: all .3s ease;
+    }
+
+    &__body{
+        padding: 17px 32px;
+        max-height: 300px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+          
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: hsl(0, 0%, 66%);
+        }
+          
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color: transparent;
+        }
+    }
+
+    &__title{
+        font-size: 36px;
+        font-family: $font-family-RobotoMono;
+        font-weight: 600;
+        color: #525252;
+        margin: 0px 0px 5px 0px;
+
+    }
+
+    &__date{
+        font-family: $font-family-RobotoMono;
+        display: flex;
+        gap: 10px;
+        color: #B9B9B9;
+        font-size: 24px;
+        margin: 0px 0px 15px 0px;
+
+        &--body{
+            font-weight: 400;
+        }
+
+        &--time{
+            font-weight: 300;
+        }
+    }
+
+    &__text{
+        font-family: $font-family-RobotoMonoItalic;
+        font-size: 16px;
+        line-height: 20px;
+        word-wrap: break-word;
+        span{
+            font-family: $font-family-RobotoMono;
+        }
+    }
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    span{
+        position: absolute;
+        display: block;
+        width: 27px;
+        height: 2px;
+        background-color: rgb(170, 170, 170);
+        &:nth-child(1){
+            transform: rotate(-45deg);
+        }
+        &:nth-child(2){
+            transform: rotate(45deg);
+        }
+    }
+}

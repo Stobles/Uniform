@@ -11,9 +11,11 @@
 
     <div class="wrapper container">
         <div class="wrapper__inner">
-            <div class="header">
-                <a href="index.html" class="header__logo">
-                    <img src="imgs/logo/Uniform_logo.png" alt="">
+            <header class="header">
+                <a
+                 href="index.html" class="header__logo">
+                    <img class="header__logo--pc" src="imgs/logo/Uniform_logo.png" alt="">
+                    <img class="header__logo--mobile" src="imgs/logo/mobile_logo.png" alt="">
                 </a>
                 <nav class="header__tabs">
                     <div data-tab="library" class="header__tab header__tab--library">
@@ -21,40 +23,275 @@
                         <div data-fortab = "library" class="header__tab--themes">
                             <ul>
                                 <li class="header__tab--theme">
-                                    <button>Математика</button>
+                                    <button data-theme = "math">Математика</button>
                                 </li>
                                 <li class="header__tab--theme">
-                                    <button>Социология</button>
+                                    <button data-theme ="sociology">Социология</button>
                                     </li>
                                 <li class="header__tab--theme">
-                                    <button>Химия</button>
+                                    <button data-theme = "chemistry">Химия</button>
                                     </li>
                                 <li class="header__tab--theme">
-                                    <button >Физика</button>
+                                    <button data-theme = "physics">Физика</button>
                                     </li>
                                 <li class="header__tab--theme">
                                     <button data-theme = "history">История</button>
                                 </li>
                                 <li class="header__tab--theme">
-                                    <button>Языки</button>
+                                    <button data-theme = "languages">Языки</button>
                                     </li>
                                 <li class="header__tab--theme">
-                                    <button>ИТ</button>
+                                    <button data-theme = "it">ИТ</button>
                                     </li>
                                 <li class="header__tab--theme">
-                                    <button>Биология</button>
+                                    <button data-theme = "biology">Биология</button>
                                     </li>
                                 <li class="header__tab--theme">
-                                    <button type="button">Философия</button>
+                                    <button data-theme = "philosophy">Философия</button>
                                     </li>
                                 <li class="header__tab--theme">
-                                    <button>Теория музыки</button>
+                                    <button data-theme = "music">Теория музыки</button>
                                     </li>
                                 <li class="header__tab--theme">
-                                    <button class="header__tab--theme--btn">Психология и психиатрия</button>
+                                    <button class="header__tab--theme--btn" data-theme = "psychology">Психология и психиатрия</button>
                                     </li>
                             </ul>
                             <div data-fortheme="history" class="header__tab--theme--subtopics">
+                                <a href="#" class="header__tab--theme--subtopic">
+                                первобытное общество
+                                    <span>(до 3000г. н.э.)</span></a>
+                                <a href="#" class="header__tab--theme--subtopic">Древний мир
+                                    <span>(3000г. н.э. - 476г н.э.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                     Средние века
+                                    <span>(476г н.э. - конец 15 в.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                    Новое время
+                                    <span>(конец 15 в. - 1918г.)</span>
+                                        
+                                </a>
+                                <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                    Новейшее время   
+                                    <span>(конец 15 в. - 1918г.)<span>                                         
+                                </a>
+                            </div>
+
+                            <div data-fortheme="math" class="header__tab--theme--subtopics">
+                                <a href="#" class="header__tab--theme--subtopic">
+                                первобытное общество
+                                    <span>(до 3000г. н.э.)</span></a>
+                                <a href="#" class="header__tab--theme--subtopic">Древний мир
+                                    <span>(3000г. н.э. - 476г н.э.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                     Средние века
+                                    <span>(476г н.э. - конец 15 в.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                    Новое время
+                                    <span>(конец 15 в. - 1918г.)</span>
+                                        
+                                </a>
+                                <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                    Новейшее время   
+                                    <span>(конец 15 в. - 1918г.)<span>                                         
+                                </a>
+                            </div>
+
+                            <div data-fortheme="sociology" class="header__tab--theme--subtopics">
+                                <a href="#" class="header__tab--theme--subtopic">
+                                первобытное общество
+                                    <span>(до 3000г. н.э.)</span></a>
+                                <a href="#" class="header__tab--theme--subtopic">Древний мир
+                                    <span>(3000г. н.э. - 476г н.э.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                     Средние века
+                                    <span>(476г н.э. - конец 15 в.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                    Новое время
+                                    <span>(конец 15 в. - 1918г.)</span>
+                                        
+                                </a>
+                                <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                    Новейшее время   
+                                    <span>(конец 15 в. - 1918г.)<span>                                         
+                                </a>
+                            </div>
+
+                            <div data-fortheme="chemistry" class="header__tab--theme--subtopics">
+                                <a href="#" class="header__tab--theme--subtopic">
+                                первобытное общество
+                                    <span>(до 3000г. н.э.)</span></a>
+                                <a href="#" class="header__tab--theme--subtopic">Древний мир
+                                    <span>(3000г. н.э. - 476г н.э.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                     Средние века
+                                    <span>(476г н.э. - конец 15 в.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                    Новое время
+                                    <span>(конец 15 в. - 1918г.)</span>
+                                        
+                                </a>
+                                <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                    Новейшее время   
+                                    <span>(конец 15 в. - 1918г.)<span>                                         
+                                </a>
+                            </div>
+
+                            <div data-fortheme="physics" class="header__tab--theme--subtopics">
+                                <a href="#" class="header__tab--theme--subtopic">
+                                первобытное общество
+                                    <span>(до 3000г. н.э.)</span></a>
+                                <a href="#" class="header__tab--theme--subtopic">Древний мир
+                                    <span>(3000г. н.э. - 476г н.э.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                     Средние века
+                                    <span>(476г н.э. - конец 15 в.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                    Новое время
+                                    <span>(конец 15 в. - 1918г.)</span>
+                                        
+                                </a>
+                                <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                    Новейшее время   
+                                    <span>(конец 15 в. - 1918г.)<span>                                         
+                                </a>
+                            </div>
+
+                            <div data-fortheme="languages" class="header__tab--theme--subtopics">
+                                <a href="#" class="header__tab--theme--subtopic">
+                                Английский</a>
+                                <a href="#" class="header__tab--theme--subtopic">Китайский
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                     Немецкий
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                    Испанский
+                                        
+                                </a>
+                                <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                    Итальянский                                        
+                                </a>
+
+                                <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                    Французский                                       
+                                </a>
+
+                                <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                    Эстонский                                      
+                                </a>
+                            </div>
+
+                            <div data-fortheme="it" class="header__tab--theme--subtopics">
+                                <a href="#" class="header__tab--theme--subtopic">
+                                первобытное общество
+                                    <span>(до 3000г. н.э.)</span></a>
+                                <a href="#" class="header__tab--theme--subtopic">Древний мир
+                                    <span>(3000г. н.э. - 476г н.э.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                     Средние века
+                                    <span>(476г н.э. - конец 15 в.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                    Новое время
+                                    <span>(конец 15 в. - 1918г.)</span>
+                                        
+                                </a>
+                                <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                    Новейшее время   
+                                    <span>(конец 15 в. - 1918г.)<span>                                         
+                                </a>
+                            </div>
+
+                            <div data-fortheme="biology" class="header__tab--theme--subtopics">
+                                <a href="#" class="header__tab--theme--subtopic">
+                                    Анатомия</a>
+                                    <a href="#" class="header__tab--theme--subtopic">Антропология
+                                    </a>
+                                    <a href="#" class="header__tab--theme--subtopic">
+                                        Ботаника
+                                    </a>
+                                    <a href="#" class="header__tab--theme--subtopic">
+                                        Вирусология
+                                            
+                                    </a>
+                                    <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                        Генетика                                       
+                                    </a>
+    
+                                    <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                        Зоология                                      
+                                    </a>
+    
+                                    <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                        Физиология                                      
+                                    </a>
+                                    <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                        Микология                                     
+                                    </a>
+                                    <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                        Микробиология                                     
+                                    </a>
+                                    <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                        Морфология                                      
+                                    </a>
+                            </div>
+
+                            <div data-fortheme="philosophy" class="header__tab--theme--subtopics">
+                                <a href="#" class="header__tab--theme--subtopic">
+                                первобытное общество
+                                    <span>(до 3000г. н.э.)</span></a>
+                                <a href="#" class="header__tab--theme--subtopic">Древний мир
+                                    <span>(3000г. н.э. - 476г н.э.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                     Средние века
+                                    <span>(476г н.э. - конец 15 в.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                    Новое время
+                                    <span>(конец 15 в. - 1918г.)</span>
+                                        
+                                </a>
+                                <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                    Новейшее время   
+                                    <span>(конец 15 в. - 1918г.)<span>                                         
+                                </a>
+                            </div>
+
+                            <div data-fortheme="music" class="header__tab--theme--subtopics">
+                                <a href="#" class="header__tab--theme--subtopic">
+                                первобытное общество
+                                    <span>(до 3000г. н.э.)</span></a>
+                                <a href="#" class="header__tab--theme--subtopic">Древний мир
+                                    <span>(3000г. н.э. - 476г н.э.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                     Средние века
+                                    <span>(476г н.э. - конец 15 в.)</span>
+                                </a>
+                                <a href="#" class="header__tab--theme--subtopic">
+                                    Новое время
+                                    <span>(конец 15 в. - 1918г.)</span>
+                                        
+                                </a>
+                                <a href="article.html" class="header__tab--theme--subtopic prevent-default">
+                                    Новейшее время   
+                                    <span>(конец 15 в. - 1918г.)<span>                                         
+                                </a>
+                            </div>
+
+                            <div data-fortheme="psychology" class="header__tab--theme--subtopics">
                                 <a href="#" class="header__tab--theme--subtopic">
                                 первобытное общество
                                     <span>(до 3000г. н.э.)</span></a>
@@ -100,78 +337,132 @@
                         </div>
                     </div>
                 </nav>
-            </div>
+
+                <div class="header__mobile">
+                    <button type="button" class="header__mobile--news">Site News</button>
+
+                    <button class="header__mobile--burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="header__mobile--cats"></div>
+            </header>
             <div class="wrapper__body">
                 <aside class="news">
                     <div class="news__title">Site News</div>
-                    <div class="news__body empty">
-                        <div class="news__body--inner">
-                            <div class="news__body--message">
-                                <div class="news__body--message--title">Новостной заголовок</div>
-                                <div class="news__body--message--text">Название </div>
+                    <div class="news__inner">
+                        <a href="#" class="news__body empty">
+                            <div class="news__body--date">
+                                <div class="news__body--date--text">11.08.21</div>
+                                <div class="news__body--date--time">12:26</div>
                             </div>
-
-                            <div class="news__body--message">
-                                <div class="news__body--message--title">Новостной заголовок</div>
-                                <div class="news__body--message--text">Название </div>
+                            <div class="news__body--title"><p>Сайт запущен.</p></div>
+                            <div class="news__body--text">
+                                <p>С нашей библиотекой можно ознакомиться во вкладке <span>“Library”</span></p>
+                                <p>С нашей библиотекой можно ознакомиться во вкладке <span>“Library”</span></p>
+                                <p>С нашей библиотекой можно ознакомиться во вкладке <span>“Library”</span></p></div>
+                        </a>
+    
+                        <a href="#" class="news__body empty">
+                            <div class="news__body--date">
+                                <div class="news__body--date--text">11.08.21</div>
+                                <div class="news__body--date--time">12:26</div>
                             </div>
-
-
-                            <div class="news__body--message">
-                                <div class="news__body--message--title">Новостной заголовок</div>
-                                <div class="news__body--message--text">Название </div>
+                            <div class="news__body--title"><p>Сайт запущен.</p></div>
+                            <div class="news__body--text">
+                                <p>С нашей библиотекой можно ознакомиться во вкладке <span>“Library”</span></p>
                             </div>
-
-                            <div class="news__body--message">
-                                <div class="news__body--message--title">Новостной заголовок</div>
-                                <div class="news__body--message--text">Название </div>
+                        </a>
+    
+                        <a href="#" class="news__body empty">
+                            <div class="news__body--date">
+                                <div class="news__body--date--text">11.08.21</div>
+                                <div class="news__body--date--time">12:26</div>
                             </div>
-
-
-                            <div class="news__body--message">
-                                <div class="news__body--message--title">Новостной заголовок</div>
-                                <div class="news__body--message--text">Название </div>
+                            <div class="news__body--title"><p>Сайт запущен.</p></div>
+                            <div class="news__body--text"><p>С нашей библиотекой можно ознакомиться во вкладке <span>“Library”</span></p></div>
+                        </a>
+    
+                        <a href="#" class="news__body empty">
+                            <div class="news__body--date">
+                                <div class="news__body--date--text">11.08.21</div>
+                                <div class="news__body--date--time">12:26</div>
                             </div>
-                            
-                            <div class="news__body--message">
-                                <div class="news__body--message--title">Новостной заголовок</div>
-                                <div class="news__body--message--text">Название </div>
+                            <div class="news__body--title"><p>Сайт запущен.</p></div>
+                            <div class="news__body--text"><p>С нашей библиотекой можно ознакомиться во вкладке <span>“Library”</span>.</p></div>
+                        </a>
+    
+                        <a href="#" class="news__body empty">
+                            <div class="news__body--date">
+                                <div class="news__body--date--text">11.08.21</div>
+                                <div class="news__body--date--time">12:26</div>
                             </div>
-
-                            <div class="news__body--message">
-                                <div class="news__body--message--title">Новостной заголовок</div>
-                                <div class="news__body--message--text">Название </div>
-                            </div>
-
-                            <div class="news__body--message">
-                                <div class="news__body--message--title">Новостной заголовок</div>
-                                <div class="news__body--message--text">Название </div>
-                            </div>
-                            
-                            <div class="news__body--message">
-                                <div class="news__body--message--title">Новостной заголовок</div>
-                                <div class="news__body--message--text">Название </div>
-                            </div>
-                        </div>
+                            <div class="news__body--title"><p>Сайт запущен.</p></div>
+                            <div class="news__body--text"><p>С нашей библиотекой можно ознакомиться во вкладке <span>“Library”</span>.</p></div>
+                        </a>
                     </div>
                 </aside>
                 <div class="content">
                     <div class="content__body">
-                        <div class="content__inner">
-                            <p>Добро пожаловать на <a href="index.html"><span>Uniform</span></a>! Вскоре ты найдёшь здесь информацию по любой науке, сможешь проверить свои знания и многое другое! А пока можешь ознакомить с тем, что мы имеем во вкладке “LIBRARY”. 
-                            </p>
-                            <p>Все обновления сайта будут отображаться слева. </p>
+                        <div class="content__vector">
+                            <img src="imgs/content/vector_1.png" alt="">
                         </div>
-                    </div>
-                    <div class="content__empty">
-                        <img src="imgs/content/Empty_background.png" alt="">
+                        <div class="content__vector">
+                            <img src="imgs/content/vector_2.png" alt="">
+                        </div>
+                        <div class="content__vector">
+                            <img src="imgs/content/vector_3.png" alt="">
+                        </div>
+                        <div class="content__vector">
+                            <img src="imgs/content/vector_4.png" alt="">
+                        </div>
+                        <div class="content__vector">
+                            <img src="imgs/content/vector_5.png" alt="">
+                        </div>
+                        <div class="content__inner">
+                            <div class="content__message"><p>Добро пожаловать на <span> Uniform</span>!</p></div>
+                            <div class="content__message you"><p>А это что?!!</p></div>
+                            <div class="content__message"><p><span>Uniform</span> - свободный образовательный сервис!</p></div>
+                            <div class="content__message you"><p>Что это значит?</p></div>
+                            <div class="content__message"><p>У нас вы можете учиться... БЕСПЛАТНО!</p></div>
+                            <div class="content__message you"><p>Как начать?..</p></div>
+                            <div class="content__message">
+                                <p>Жми СЮДА!</p> 
+                                <p class="undertext">(или используй вкладку сверху)</p>
+                                <img class="content__message--arrow" src="imgs/content/arrow.svg" alt="">
+                            </div>
+                            <a href="#" class="content__message you content__message--link">
+                                <p>Library</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="modal modal__news">
+        <div class="modal__inner">
+            <div class="modal__body">
+                <div class="modal__title"></div>
+                <div class="modal__date">
+                    <div class="modal__date--body">11.08.21</div>
+                    <div class="modal__date--time">12:26</div>
+                </div>
+                <div class="modal__text"></div>
+            </div>
+
+            <button class="close">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
     
 </body>
 </html>
